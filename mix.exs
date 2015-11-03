@@ -14,7 +14,7 @@ defmodule Hoihoi.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpotion]]
+    [applications: [:logger, :httpoison]]
   end
 
   # Dependencies can be Hex packages:
@@ -29,8 +29,7 @@ defmodule Hoihoi.Mixfile do
   defp deps do
     [
       { :spirit, "~> 0.0.1" },
-      { :ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.2" },
-      { :httpotion, "~> 2.1.0" }
+      { :httpoison, "~> 0.7.2"}
     ]
   end
 end
